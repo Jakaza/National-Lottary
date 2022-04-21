@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number - Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-wrapper">
+        <h2>BEt Numbers</h2>
+    </div>
+
+    <div class="main-container">
+        <div class="numbers-container">
+            <div class="sub-heading">
+                <h3>
+                    place your BEt
+                </h3>
+            </div>
+
+            <div class="buttons-main-container">
+
+                <div class="select-input-field global-width-margin-center">
+                    <select disabled name="" id="">
+                        <!-- <option value="1"><span>1 Balls</span> <span class="price">6.50</span></option>
+                        <option value="2"><span>2 Balls</span> <span class="price">53.00</span></option> -->
+                        <option value="3"><span>3 Balls</span> <span class="price"></span></option>
+                        <!-- <option value="4"><span>4 Balls</span> <span class="price">4001.00</span></option>
+                        <option value="5"><span>5 Balls</span> <span class="price">50001.00</span></option>
+                        <option value="6"><span>6 Balls</span> <span class="price">120001.00</span></option> -->
+                    </select>
+
+                    <div class="sub-heading sub2">
+                        <h2>Main Numbers</h2>
+                    </div>
+
+                    <div class="manual-con">
+                        <h3>Manual Selection</h3>
+                    </div>
+
+                    <p>
+                        select numbers of your choice and add bet
+                    </p>
+
+                </div>
+
+
+                <div class="all-buttons-main-container global-width-margin-center">
+
+                    <div class="buttons-num">
+                        <button class="btn " id="1">1 <span class="select">1</span></button>
+                        <button class="btn " id="2">2 <span class="select">2</span></button>
+                        <button class="btn " id="3">3 <span class="select">3</span></button>
+                        <button class="btn " id="4">4 <span class="select">4</span></button>
+                        <button class="btn " id="5">5 <span class="select">5</span></button>
+                        <button class="btn " id="6">6 <span class="select">6</span></button>
+                        <button class="btn " id="7">7 <span class="select">7</span></button>
+                        <button class="btn " id="8">8 <span class="select">8</span></button>
+                        <button class="btn " id="9">9 <span class="select">9</span></button>
+                        <button class="btn " id="10">10 <span class="select">10</span></button>
+                        <button class="btn " id="11">11 <span class="select">11</span></button>
+                        <button class="btn " id="12">12 <span class="select">12</span></button>
+                        <button class="btn " id="13">13 <span class="select">13</span></button>
+                        <button class="btn " id="14">14 <span class="select">14</span></button>
+                        <button class="btn " id="15">15 <span class="select">15</span></button>
+                        <button class="btn " id="16">16 <span class="select">16</span></button>
+                        <button class="btn " id="17">17 <span class="select">17</span></button>
+                        <button class="btn " id="18">18 <span class="select">18</span></button>
+                        <button class="btn " id="19">19 <span class="select">19</span></button>
+                        <button class="btn " id="21">21 <span class="select">21</span></button>
+                        <button class="btn " id="22">22 <span class="select">22</span></button>
+                        <button class="btn " id="23">23 <span class="select">23</span></button>
+                        <button class="btn " id="24">24 <span class="select">24</span></button>
+                        <button class="btn " id="25">25 <span class="select">25</span></button>
+                        <button class="btn " id="26">26 <span class="select">26</span></button>
+                        <button class="btn " id="27">27 <span class="select">27</span></button>
+                        <button class="btn " id="28">28 <span class="select">28</span></button>
+                        <button class="btn " id="29">29 <span class="select">29</span></button>
+                        <button class="btn " id="30">30 <span class="select">30</span></button>
+                        <button class="btn " id="31">31 <span class="select">31</span></button>
+                        <button class="btn " id="32">32 <span class="select">32</span></button>
+                        <button class="btn " id="33">33 <span class="select">33</span></button>
+                        <button class="btn " id="34">34 <span class="select">34</span></button>
+                        <button class="btn " id="35">35 <span class="select">35</span></button>
+                        <button class="btn " id="36">36 <span class="select">36</span></button>
+                        <button class="btn " id="37">37 <span class="select">37</span></button>
+                        <button class="btn " id="38">38 <span class="select">38</span></button>
+                        <button class="btn " id="39">39 <span class="select">39</span></button>
+                        <button class="btn " id="40">40 <span class="select">40</span></button>
+
+                    </div>
+
+                    <div class="selected-container">
+                        <div class="selected-inner-con">
+                            <!-- <div class="sub-heading">
+                                <h3>Your Selection</h3>
+
+                                <div class="nums global-width-margin-center">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="add-and-clear-btn">
+                                    <button id="clear">Clear</button>
+                                    <button id="add">Add</button>
+                                </div>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="view-bet-container">
+                    <a href="mybets.html">No of Bets <span id="numBets">0</span></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="sub-heading sub2">
+                <h2>Results</h2>
+            </div>
+            <div class="select-input-field global-width-margin-center">
+
+
+                <div id="timeCount" class="sub-heading sub2">
+                </div>
+
+                <p>
+                    Visit this site for the results
+                </p>
+
+                <div class="manual-con">
+                    <h3 id="result"><a style="text-decoration: none;" href="mybets.html">VIEW RESULT</a></h3>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="genarateResult.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+    <div class="main-container">
+        <div class="numbers-container">
+            <div class="selected-numbers-table">
+
+                <table border="1">
+                    <thead>
+                        <div class="sub-heading sub2">
+                            Number Selected
+                        </div>
+
+                    </thead>
+                    <tbody id="betsCon">
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>

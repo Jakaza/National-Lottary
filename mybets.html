@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-wrapper">
+        <h2>
+            <span id="h"></span><span id="m"></span><span id="s"></span>
+        </h2>
+    </div>
+
+    <div class="main-container">
+        <div class="numbers-container">
+            <div class="buttons-main-container">
+
+                <div class="select-input-field global-width-margin-center">
+
+                    <div class="sub-heading sub2">
+                        <h2>Main Numbers</h2>
+                        <br>
+                        <p id="resultTextEl"></p>
+                        <h2 id="resultEl"></h2>
+                    </div>
+
+                </div>
+
+
+                <div class="all-buttons-main-container global-width-margin-center">
+
+                    <div class="main-container">
+                        <div class="numbers-container">
+                            <div class="selected-numbers-table">
+
+                                <table border="1">
+                                    <thead>
+                                        <div class="sub-heading sub2">
+                                            Number Selected
+                                        </div>
+
+                                    </thead>
+                                    <tbody id="betsCon">
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="sub-heading sub2">
+                <h2>Results</h2>
+            </div>
+
+            <div class="displayResult">
+                <table id="resultTable">
+
+                </table>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+
+        const betCon = document.getElementById('betsCon');
+
+        (function () {
+
+            const getAllbets = JSON.parse(localStorage.getItem('myBets'));
+
+            if (getAllbets) {
+
+                allBets = [...getAllbets];
+                //numberBets.innerHTML = allBets.length;
+
+                displayAllBets(allBets);
+            } else {
+
+                allBets = [];
+            }
+
+        }())
+
+        function displayAllBets(bets) {
+
+            let no = 0;
+            let template = '';
+
+            bets.forEach(element => {
+
+                element.sort((a, b) => a - b);
+                no++;
+                template += `
+
+         <tr>
+            <th><p>Bet ${no} </p></th>
+            <th>${element[0]}</th>
+            <th>${element[1]}</th>
+            <th>${element[2]}</th>
+            <th><p>Pending</p></th>
+        </tr>
+        `
+            })
+            betCon.innerHTML = template;
+        }
+    </script>
+
+    <script src="genarateResult.js"></script>
+</body>
+
+</html>
